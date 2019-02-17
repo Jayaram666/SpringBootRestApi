@@ -12,20 +12,11 @@ pipeline {
             }
         }
 
-        stage ('Testing Stage') {
-
-            steps {
-                withMaven(maven : 'MAVEN') {
-                    bat 'mvn test'
-                }
-            }
-        }
-
 
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'MAVEN') {
-                    bat 'mvn deploy'
+                    bat 'mvn SpringBootRestApiExample/target/SpringBootRestApiExample.jar install'
                 }
             }
         }
