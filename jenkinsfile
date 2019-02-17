@@ -6,6 +6,8 @@ pipeline {
 
             steps {
                 withMaven(maven : 'MAVEN') {
+                
+                      bat ' mvn -f ABC/pom.xml clean install' 
                     bat 'mvn clean compile'
                 }
             }
