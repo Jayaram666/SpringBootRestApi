@@ -7,7 +7,7 @@ pipeline {
             steps {
                 withMaven(maven : 'MAVEN') {
                 
-                      bat ' mvn -f SpringBootRestApiExample/pom.xml clean compile' 
+                      bat ' mvn -f SpringBootRestApiExample/pom.xml clean package' 
                 }
             }
         }
@@ -17,6 +17,7 @@ pipeline {
             steps {
                 withMaven(maven : 'MAVEN') {
                     bat 'mvn -f SpringBootRestApiExample/pom.xml install'
+                   bat 'java -jar com\websystique\springboot\SpringBootRestApiExample\1.0.0\SpringBootRestApiExample-1.0.0.jar
                 }
             }
         }
