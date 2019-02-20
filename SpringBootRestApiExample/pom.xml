@@ -10,6 +10,12 @@
 	
 
 	<name>SpringBootRestApiExample</name>
+	
+	
+	
+	
+	
+	
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
