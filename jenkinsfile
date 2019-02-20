@@ -6,7 +6,8 @@ pipeline {
 
             steps {
                 withMaven(maven : 'MAVEN') {
-                
+                 
+                echo "JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ"
                       bat ' mvn -f SpringBootRestApiExample/pom.xml clean package' 
                    script{   
                       def changeLogSets = currentBuild.changeSets
