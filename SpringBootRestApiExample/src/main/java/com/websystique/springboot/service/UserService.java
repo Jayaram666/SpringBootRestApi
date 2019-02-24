@@ -10,6 +10,9 @@ public interface UserService {
 	
 	
 	
+	
+	
+	
 	User findById(long id);
 	
 	User findByName(String name);
