@@ -25,7 +25,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
             echo "${file.path}"
                    String a={file.path};
                     String[] str;
-                  str = a.split('/');
+                  str = a.split('\\');
                   lst.add(str[0]);
                   echo "roooooooooot"
                   echo "${file.path}"
