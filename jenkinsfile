@@ -24,7 +24,10 @@ for (int i = 0; i < changeLogSets.size(); i++) {
             echo  "file path started..."
             echo "${file.path}"
             String a={file.path};
-                  str = a.split('/');
+            String delims = "[\\]";
+                  str = a.split(delims);
+                 
+                  
                   lst.add(str[0]);
                   echo str[0];
             echo  "file path ended  ..."
