@@ -29,6 +29,11 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   
                   lst.add(str[0]);
                   echo str[0];
+                  echo "roooooooooot"
+                  print str[0];
+                  print str[1];
+                  echo "roooooooooot"
+
             echo  "file path ended  ..."
         }
     }
