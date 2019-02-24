@@ -10,6 +10,7 @@ pipeline {
                 echo "JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ"
                    script{   
                        String[] str;
+                       def lst = [];
     def changeLogSets = currentBuild.changeSets
 for (int i = 0; i < changeLogSets.size(); i++) {
     def entries = changeLogSets[i].items
@@ -24,6 +25,8 @@ for (int i = 0; i < changeLogSets.size(); i++) {
             echo "${file.path}"
             String a={file.path};
                   str = a.split('/');
+                  lst.add(str[0]);
+                  echo str[0];
             echo  "file path ended  ..."
         }
     }
