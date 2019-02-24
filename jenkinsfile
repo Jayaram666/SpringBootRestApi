@@ -32,7 +32,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   echo str[0];
                   echo "roooooooooot"
                   echo "${file.path}"
-                  print str[0];
+                  print a;
                   echo "roooooooooot"
 
             echo  "file path ended  ..."
