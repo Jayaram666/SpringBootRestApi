@@ -24,7 +24,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
             echo  "file path started..."
             echo "${file.path}"
             String a={file.path};
-            String delims = "[\\]";
+            String delims = "\\";
                   str = a.split(delims);
                  
                   
