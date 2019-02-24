@@ -7,6 +7,9 @@ import com.websystique.springboot.model.User;
 
 public interface UserService {
 	
+	
+	
+	
 	User findById(long id);
 	
 	User findByName(String name);
