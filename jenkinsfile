@@ -31,7 +31,8 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   echo "${file.path}"
                   print a;
                   print str;
-                  echo lst.get(0)
+                  echo lst.get(0)+" ";
+                  echo lst.get(0).toString();
                   echo "roooooooooot"
 
             echo  "file path ended  ..."
