@@ -30,7 +30,6 @@ for (int i = 0; i < changeLogSets.size(); i++) {
 
                   print str.length;
              print str[0]
-             print str[1]
                   echo "roooooooooot"
             echo  "file path ended  ..."
         }
