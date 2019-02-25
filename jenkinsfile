@@ -28,7 +28,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   str=a.split('/')[0]
                   echo "roooooooooot"
                   File file1 = new File(${file.path})
-                  Path name0 =new Path(${file.path})
+                  Path namew =new Path(${file.path})
                     print str
                   echo "roooooooooot"
             echo  "file path ended  ..."
