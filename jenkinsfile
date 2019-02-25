@@ -24,11 +24,13 @@ for (int i = 0; i < changeLogSets.size(); i++) {
             echo  "file path started..."
             echo "${file.path}"
                    String a={file.path};
+                   
                     def str=[] as String[] ;
                   str=a.split('/')[0]
                   echo "roooooooooot"
                   File file1 = new File("${file.path}")
-                 echo file1.getParentFile().getAbsolutePath()
+                      def abso="${file.path}".toString()
+                      ech def
                   echo "roooooooooot"
             echo  "file path ended  ..."
         }
@@ -51,6 +53,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
         }
     }
 }
+
 
 
 
