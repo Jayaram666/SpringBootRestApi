@@ -23,4 +23,5 @@ public interface UserService {
 	
 	boolean isUserExist(User user);
 	
+	
 }
