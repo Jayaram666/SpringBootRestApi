@@ -14,6 +14,8 @@ public class User {
 		id=0;
 	}
 	
+	
+	
 	public User(long id, String name, int age, double salary){
 		this.id = id;
 		this.name = name;
