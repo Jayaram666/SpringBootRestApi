@@ -8,6 +8,7 @@ pipeline {
                 withMaven(maven : 'MAVEN') {
                  
                 echo "JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ"
+                sh ' mvn -f SpringBootRestApiExample/pom.xml clean package' 
                    script{   
                        
                        def lst = [] ;
@@ -49,8 +50,8 @@ for (int i = 0; i < changeLogSets.size(); i++) {
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'MAVEN') {
-                    bat 'mvn -f SpringBootRestApiExample/pom.xml install'
-                   bat 'java -jar SpringBootRestApiExample/target/SpringBootRestApiExample-1.0.0.jar'
+                    sh 'mvn -f SpringBootRestApiExample/pom.xml install'
+                   sh 'java -jar SpringBootRestApiExample/target/SpringBootRestApiExample-1.0.0.jar'
                 }
             }
         }
