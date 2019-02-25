@@ -17,6 +17,7 @@
 			1.8 when building on commandline -->
 	</properties>
 	<dependencies>
+		
 		<!-- Adds Tomcat and Spring MVC, along others -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
