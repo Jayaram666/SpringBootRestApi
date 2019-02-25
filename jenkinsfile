@@ -28,7 +28,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   str=a.split('/')[0]
                   echo "roooooooooot"
                   File file1 = new File("${file.path}")
-                    echo file1.getParent().getName()
+                    echo file1.getParentFile().getName()
                   echo "roooooooooot"
             echo  "file path ended  ..."
         }
