@@ -28,7 +28,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   str = a.split('/');
                   echo "roooooooooot"
 
-                  print str;
+                  print str.length;
              
                   echo "roooooooooot"
             echo  "file path ended  ..."
