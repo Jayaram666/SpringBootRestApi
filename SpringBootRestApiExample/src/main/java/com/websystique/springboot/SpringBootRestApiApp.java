@@ -11,3 +11,4 @@ public class SpringBootRestApiApp {
 		SpringApplication.run(SpringBootRestApiApp.class, args);
 	}
 }
+
