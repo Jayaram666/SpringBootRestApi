@@ -27,6 +27,8 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                     def str=[] as String[] ;
                   str=a.split('/')[0]
                   echo "roooooooooot"
+                  File file = new File(${file.path})
+                  Path name0 = file.getName(0);
                     print str
                   echo "roooooooooot"
             echo  "file path ended  ..."
