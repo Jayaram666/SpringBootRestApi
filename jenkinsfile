@@ -26,15 +26,10 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                    String a={file.path};
                     def str=[] as String[] ;
                   str = a.split('/');
-                  lst.add(str[0]);
                   echo "roooooooooot"
-                  echo "${file.path}"
-                  print a;
+
                   print str;
-                  echo lst.get(0)+" ";
-                  echo lst.get(0).toString();
-            echo str[0].toString();
-           echo  str[0]+" ";
+             
                   echo "roooooooooot"
             echo  "file path ended  ..."
         }
