@@ -29,7 +29,6 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   echo "roooooooooot"
                   File file1 = new File("${file.path}")
                    echo file1.getParentFile();
-                    print str
                   echo "roooooooooot"
             echo  "file path ended  ..."
         }
