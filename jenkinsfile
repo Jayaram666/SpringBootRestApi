@@ -30,6 +30,8 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   echo "roooooooooot"
                   File file1 = new File("${file.path}")
                       def abso="${file.path}".toString()
+                       String[] str;
+                      str = abso.split('/');
                       echo abso
                   echo "roooooooooot"
             echo  "file path ended  ..."
@@ -43,6 +45,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
         }
 
 }
+
         stage ('Deployment Stage') {
             steps {
                 withMaven(maven : 'MAVEN') {
