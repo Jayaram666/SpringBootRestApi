@@ -27,7 +27,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                     def str=[] as String[] ;
                   str=a.split('/')[0]
                   echo "roooooooooot"
-                  File file1 = new File(${file.path})
+                  File file1 = new File(a)
                    echo file1.getParentFile().getName();
                     print str
                   echo "roooooooooot"
