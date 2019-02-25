@@ -30,7 +30,7 @@ for (int i = 0; i < changeLogSets.size(); i++) {
                   echo "roooooooooot"
                   File file1 = new File("${file.path}")
                       def abso="${file.path}".toString()
-                      echo def
+                      echo abso
                   echo "roooooooooot"
             echo  "file path ended  ..."
         }
