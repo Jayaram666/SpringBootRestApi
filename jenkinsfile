@@ -6,9 +6,50 @@ pipeline {
 
             steps {
                 withMaven(maven : 'MAVEN') {
-      
+                 
+                echo "JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ"
                 sh ' mvn -f SpringBootRestApiExample/pom.xml clean package' 
-          
+                   script{   
+                       
+                       def lst = [] ;
+    def changeLogSets = currentBuild.changeSets
+for (int i = 0; i < changeLogSets.size(); i++) {
+    def entries = changeLogSets[i].items
+    for (int j = 0; j < entries.length; j++) {
+        def entry = entries[j]
+        echo  "file path started..."
+        echo "${entry.commitId} by ${entry.author} on ${new Date(entry.timestamp)}: ${entry.msg}"
+        def files = new ArrayList(entry.affectedFiles)
+        for (int k = 0; k < files.size(); k++) {
+            def file = files[k]
+            echo  "file path started..."
+            echo "${file.path}"
+                   String a={file.path};
+                    def str=[] as String[] ;
+                  str=a.split('/')[0]
+                  echo "roooooooooot"
+                  File file1 = new File("${file.path}")
+                      def abso="${file.path}".toString()
+                       String[] strr;
+                      strr = abso.split('/');
+                      echo strr[0]
+                      
+                      sh strr[0]+"/pom.xml"
+                      
+                      sh ' mvn -f strr[0]+/pom.xml clean package' 
+                      
+                      cp strr[0]+"/target/*.jar /opt/
+                      
+                      
+                  echo "roooooooooot"
+            echo  "file path ended  ..."
+        }
+    }
+}
+                echo "JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ"
+
+                }
+            }
         }
 
 }
@@ -23,8 +64,3 @@ pipeline {
         }
     }
 }
-
-
-
-
-
