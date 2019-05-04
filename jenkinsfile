@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage ('Compile Stage') {
            
-           echo "HI I am in compile state ";
+           print "HI I am in compile state ";
         }
 
 
 
         stage ('Deployment Stage') {
-           echo "in deployment stage......"
+           print "in deployment stage......"
         }
     }
 }
