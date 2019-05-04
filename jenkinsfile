@@ -2,14 +2,17 @@ pipeline {
     agent any
     stages {
         stage ('Compile Stage') {
-           
+           steps{
            print "HI I am in compile state ";
+           }
         }
 
 
 
         stage ('Deployment Stage') {
+        steps{
            print "in deployment stage......"
+           }
         }
     }
 }
